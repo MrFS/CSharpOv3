@@ -13,13 +13,15 @@ namespace CSharpOv3
 
             Formueliste lst = new Formueliste();
 
-            Person p = new Person("Joachim FS", 1000000);
+            //Person p = new Person("Joachim FS", 10000);
 
-            lst.registrerNyPerson(p);
+            //lst.registrerNyPerson(p);
 
             lst.print();
 
-            //Console.WriteLine(lst.getRikest());
+            Person rikest = lst.getRikest();
+
+            Console.WriteLine("{0} har en formue på {1}", rikest.Navn, rikest.Formue);
 
             Console.ReadKey();
         }
